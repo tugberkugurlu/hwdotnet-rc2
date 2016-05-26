@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true,
+    "preserveCompilationContext": true
+  },
+  "dependencies": {
+    "Microsoft.Extensions.DependencyModel": "1.0.0-rc2-final"
+  },
+  "frameworks": {
+    "net451": {
+    }
+  }
+}
