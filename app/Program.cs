@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.DotNet.InternalAbstractions;
 using Microsoft.Extensions.DependencyModel;
+using SharedLib;
 
 namespace ConsoleApplication
 {
@@ -10,6 +11,8 @@ namespace ConsoleApplication
         {   
             var runtimeId = RuntimeEnvironment.GetRuntimeIdentifier();
             var assemblies = DependencyContext.Default.GetRuntimeAssemblyNames(runtimeId);
+            
+            Speaker.Speak();
             
             foreach (var assembly in assemblies)
             {
