@@ -18,9 +18,6 @@ namespace ConsoleApplication
             var path = Path.Combine(ApplicationEnvironment.ApplicationBasePath, "..", "..", "..");
             var fullPath = Path.GetFullPath(path);
             
-            Console.WriteLine(path);
-            Console.WriteLine(fullPath);
-            
             var config = new ConfigurationBuilder()
                 .SetBasePath(fullPath)
                 .AddJsonFile("config.json")
