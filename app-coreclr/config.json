@@ -1,0 +1,6 @@
+{
+    "PrimaryDataStorage": {
+        "MongoDbConnectionString": "mongodb://localhost:27017",
+        "MongoDbDatabase": "mydb"
+    }
+}
